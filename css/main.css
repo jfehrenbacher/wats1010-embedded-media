@@ -5,6 +5,366 @@
  * Site Styles
  *****************************************************************************/
 
- html {
-     color: green;
- }
+
+html {
+	padding: 0;
+}
+
+body {
+	margin: 0;
+}
+/* --------------------------------------------INTRO----------------------------------------------*/
+h1 {
+	position: absolute;
+	top: 107px;
+	font-family: 'Montserrat', sans-serif;
+	left: 125px;
+	color: white;
+	font-size: 4em;
+}
+.subtitle {
+	position: absolute;
+	top: 200px;
+	font-family: 'Montserrat', sans-serif;
+	left: 129px;
+	color: pink;
+	font-size: 1em;
+}
+#video-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1360px;
+	height: auto;
+	object-fit: cover;/* dont think this is doing anything */
+	z-index: -1;
+}
+nav {
+	position: absolute;
+	top: 760px;
+	right: 0;
+	background-color: pink;
+	width: 100%;
+	box-shadow: 1px 1px 10px cornflowerblue;
+}
+ul.main-nav {
+	text-align: left;
+	padding-left: -10px;
+}
+.main-nav li {
+	display: inline;
+	font-weight:bold;
+	color: white;
+	text-align: center;
+	padding: 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Abel', sans-serif;
+	font-size: 1.1em;
+}
+/* --------------------------------------------NAV BUTTONS----------------------------------------------*/
+#button:link {
+	color:cornflowerblue;
+	text-decoration:none;
+}
+#button:visited {
+	text-decoration:none;
+	color: cornflowerblue;
+}
+#button:hover {
+	background-color:cornflowerblue;
+	color:white;
+	text-decoration:none;
+	transition: 2s background-color;
+	transition: 1s color;
+}
+#button:active{
+	background-color:cornflowerblue;
+	color:white;
+	text-decoration:none;
+}
+/* can't change button width? */
+/* --------------------------------------------SOCIAL----------------------------------------------*/
+img#share-icon {
+	width:24px;
+	height: 24px;
+	position:fixed;
+	top:820px;
+	z-index: 2;
+	left: 2px;
+}
+ul.social-links {
+	background-color: cornflowerblue;
+    width: 100px;
+    height: 40px;
+    position: fixed;
+    border-radius: 25px;
+    left: -100px;
+    top: 797px;
+	transition: 2s width;
+	z-index:1;
+	text-align: left;
+}
+.social-links li {
+	display: inline;
+	font-weight:bold;
+	text-align: center;
+	padding: 25px;
+	text-transform: uppercase;
+	font-family: 'Abel', sans-serif;
+	font-size: 1.1em;
+}
+#twitter {
+	position:absolute;
+	top:10px;
+	left:160px;
+	color: white;
+	text-decoration: none;
+	z-index:-3;
+	opacity:0;
+	transition: 2s opacity;
+}
+#instagram {
+	position:absolute;
+	top:10px;
+	left:252px;
+	color: white;
+	text-decoration: none;
+	z-index: -3;
+	opacity:0;
+	transition: 2s opacity;
+}
+#facebook{
+	position:absolute;
+	top:10px;
+	left:356px;
+	color: white;
+	text-decoration: none;
+	z-index: -3;
+	opacity:0;
+	transition: 2s opacity;
+}
+ul.social-links:hover{
+	width: 415px;
+}
+ul.social-links:hover #twitter{
+	opacity:1.0;
+}
+ul.social-links:hover #facebook{
+	opacity:1.0;
+}
+ul.social-links:hover #instagram{
+	opacity:1.0;
+}
+/* #facebook:hover {
+	color: pink;
+}
+#instagram:hover {
+	color: pink;
+}
+#twitter:hover {
+	color: pink;
+} 
+-------These hover pseudos interrupt my ul.social-links hover for some reason */ 
+
+/* --------------------------------------------BODY----------------------------------------------*/
+/* ----------------WATCH------------------*/
+#video-embedded {
+	position: absolute;
+    right: -725px;
+    bottom: -188px;
+}
+#watch {
+	position:absolute;
+	top: 800px;
+	padding-left: 0;
+}
+#watch h2 {
+	font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 2em;
+    padding-left: 125px;
+    padding-top: 220px;
+}
+#watch h3 {
+	padding-left: 109px;
+    font-family: 'Abel', sans-serif;
+}
+#watch p {
+	width: 300px;
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+    padding-left: 37px;
+}
+.download-button1 {
+	color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 412px;
+    left: 115px;
+    text-decoration: none;
+    background-color: cornflowerblue;
+    width: 130px;
+	border-radius: 8px;
+}
+.download-button2 {
+	color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 451px;
+    left: 104px;
+    text-decoration: none;
+    background-color: cornflowerblue;
+    width: 150px;
+	border-radius: 8px;
+}
+.download-button1:hover {
+	background-color: pink;
+	transition: .25s background-color;
+}
+.download-button2:hover {
+	background-color: pink;
+	transition: .25s background-color;
+}
+/* ----------------LISTEN------------------*/
+#listen h2 {
+	font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 2em;
+    padding-left: 120px;
+    padding-top: 290px;
+}
+#listen {
+	position:absolute;
+	top:1300px;
+}
+.download-button3 {
+	color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 368px;
+    left: 80px;
+    text-decoration: none;
+    background-color: cornflowerblue;
+    width: 180px;
+    text-align: center;
+    z-index: 3;
+	border-radius: 8px;
+}
+.download-button3:hover {
+	background-color: pink;
+	transition: .25s background-color;
+}
+/* ----------------ABOUT------------------*/
+ #about h2 {
+	font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 2em;
+    padding-left: 120px;
+    padding-top: 386px;
+}
+#about {
+	position:absolute;
+	top:1525px;
+}
+#about p:not(.lead) {
+	font-family: 'Abel', san-serif;
+    padding-left: 342px;
+    width: 775px;
+    text-align: left;
+    text-decoration: none;
+}
+#about p:not(.lead) {
+	padding-top: 270px;
+}
+.lead {
+	font-family: 'Montserrat', san-serif;
+    font-weight: bold;
+    color: cornflowerblue;
+    width: 270px;
+    position: absolute;
+    left: 29px;
+    bottom: 241px;
+    font-size: 1em;
+    text-align: center;
+    line-height: 150%;
+    border-left: 2px solid#ccc;
+    border-right: 2px solid #ccc;
+    padding-left: 10px;
+	padding-right: 10px;
+}
+.headshot1 {
+	position: absolute;
+    top: 414px;
+    left: 345px;
+    width: 225px;
+    height: auto;
+}
+.headshot2 {
+	position: absolute;
+    top: 414px;
+    left: 615px;
+    width: 225px;
+    height: auto;
+}
+.headshot3 {
+	position: absolute;
+    top: 414px;
+    left: 880px;
+    width: 225px;
+    height: auto;
+}
+ul.weybec-people{
+	list-style-type:none;
+}
+.people-captions li {
+	display: inline;
+    list-style-type: none;
+    padding-right: 113px;
+    padding-top: 292px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+ul.people-captions {
+	position: absolute;
+    top: 664px;
+    left: 336px;
+}
+ul.co-founder {
+	position: absolute;
+    top: 689px;
+    left: 375px;
+}
+.co-founder li {
+	display: inline;
+    list-style-type: none;
+    padding-right: 196px;
+    padding-top: 300px;
+    font-family: 'Abel', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+.co-founder1 {
+	padding-right: 10px;
+}
+#about-links {
+	color: cornflowerblue;
+	text-decoration: none;
+}
+/* --------------------------------------------FOOTER----------------------------------------------*/
+footer nav {
+	position: absolute;
+    top: 2600px;
+    width: 100%;
+}
+footer p {
+	position: absolute;
+    left: 342px;
+    top: 2429px;
+    font-family: 'Abel', san-serif;
+    color: black;
+    font-size: .8em;
+}
+}
